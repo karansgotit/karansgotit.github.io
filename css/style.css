@@ -1,0 +1,33 @@
+
+
+body{
+    background-color: #1e1e1e;
+}
+.heading{
+    font-family: "Bebas Nue",sans-serif;
+    font-size: 60px;
+    margin-left:72px;
+    text-transform: uppercase;
+
+}
+#initial-name{
+    color: #f4a261;
+    margin-bottom: 0px;
+    margin-top:150px;
+    
+}
+#last-name{
+    color: #e76f51;
+    margin-top:0px;
+    margin-bottom:0px
+}
+
+.intro{
+    font-family: "Roboto flex",sans-serif;
+    font-size:22px;
+    color:#F2F0EF;
+    margin:20px 0px 0px 72px;
+    display: flex;
+    width: 600px;
+    
+}
