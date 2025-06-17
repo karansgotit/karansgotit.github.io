@@ -22,6 +22,10 @@ body{
     font-family: "Roboto Flex",sans-serif;
 }
 
+.navbar a:hover{
+    color: #e76f51;
+} 
+
 .heading{
     font-family: "Bebas Nue",sans-serif;
     font-size: 60px;
