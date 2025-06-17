@@ -5,13 +5,13 @@ body{
 }
 .description{
     font-family: "Roboto Flex",sans-serif;
-    font-size:30px;
+    font-size:27px;
     color:#F2F0EF;
     margin-left: 72px;
-    margin-top :200px;
+    margin-top :150px;
     font-weight: lighter;
     line-height: 200%;
-    width:600px;
+    width:650px;
 
 }
 .navbar ul {
@@ -57,9 +57,9 @@ body{
 
 .intro{
     font-family: "Roboto Flex",sans-serif;
-    font-size:22px;
+    font-size:25px;
     color:#F2F0EF;
-    margin:20px 0px 0px 72px;
+    margin:15px 0px 0px 72px;
     display: Flex;
     width: 600px;
     line-height:200%;
