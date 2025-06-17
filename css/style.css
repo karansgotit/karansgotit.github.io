@@ -4,6 +4,15 @@ body{
     background-color: #1e1e1e;
 }
 
+.navbar ul {
+    list-style-type:none;
+    background-color: #2a2a2a ;
+    padding: 20px;
+    margin:0px;
+    display: flex;
+    justify-content: center;
+    gap:40px;
+}
 
 
 .heading{
