@@ -4,7 +4,33 @@ body{
     background-color: #1e1e1e;
 }
 
-.navbar ul {
+
+#seperator{
+    font-family: "Roboto Flex",sans-serif;
+    font-size:25px;
+    color:#F2F0EF;
+    margin-left: 72px;
+    margin-bottom:0px;
+    margin-top:300px;
+    width: 850px;
+    font-weight: lighter;
+    border-bottom: 2px solid #495057;
+
+}
+
+.description{
+    font-family: "Roboto Flex",sans-serif;
+    font-size:30px;
+    color:#F2F0EF;
+    margin-left: 72px;
+    margin-top :40px;
+    font-weight: lighter;
+    line-height: 200%;
+    width:850px;
+    margin-bottom:80px;
+
+}
+#navbar ul {
     list-style-type:none;
     background-color: #2a2a2a ;
     padding: 20px;
@@ -14,7 +40,7 @@ body{
     gap:40px;
 }
 
-.navbar a{
+#navbar a{
     color: #f4a261;
     text-decoration: none;
     padding: 8px 19px;   
@@ -22,11 +48,11 @@ body{
     font-family: "Roboto Flex",sans-serif;
 }
 
-.navbar a:hover{
+#navbar a:hover{
     color: #e76f51;
 } 
 
-.heading{
+#home{
     font-family: "Bebas Nue",sans-serif;
     font-size: 60px;
     margin-left:72px;
@@ -47,11 +73,13 @@ body{
 
 .intro{
     font-family: "Roboto Flex",sans-serif;
-    font-size:22px;
+    font-size:25px;
     color:#F2F0EF;
-    margin:20px 0px 0px 72px;
+    margin:15px 0px 0px 72px;
     display: Flex;
     width: 600px;
+    line-height:200%;
+    font-weight: lighter;
 } 
 
 #resume-button{
@@ -61,7 +89,7 @@ body{
     font-size:15px;
     background-color: #f4a261;
     font-weight:900;
-
+    line-height: 175%;
 }
 
 #resume-button:hover {
