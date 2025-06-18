@@ -4,15 +4,43 @@ body{
     background-color: #1e1e1e;
 }
 
+.icons-and-content{
+    font-family: "Bebas Nue",sans-serif;
+    font-size:25px;
+    color:#F2F0EF;
+    margin-left: 72px;
+    margin-bottom:40px;
+    margin-top:50px;
+    width: 850px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 200%;
+    font-size: 36px ;
+}
+
+.content_languages{
+    font-family: "Bebas Nue",sans-serif;
+    font-size:25px;
+    color:#F2F0EF;
+    margin-left: 72px;
+    margin-bottom:40px;
+    margin-top:50px;
+    width: 850px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 200%;
+    font-size: 36px ;
+}
 .languages-section{
     font-family: "Roboto Flex",sans-serif;
     font-size:25px;
     color:#F2F0EF;
     margin-left: 72px;
     margin-bottom:40px;
-    margin-top:200px;
+    margin-top:100px;
     width: 850px;
     font-weight: lighter;
+    border-bottom: 2px solid #495057;
 }
 
 #seperator{
