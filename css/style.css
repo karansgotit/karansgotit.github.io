@@ -4,6 +4,16 @@ body{
     background-color: #1e1e1e;
 }
 
+.languages-section{
+    font-family: "Roboto Flex",sans-serif;
+    font-size:25px;
+    color:#F2F0EF;
+    margin-left: 72px;
+    margin-bottom:40px;
+    margin-top:200px;
+    width: 850px;
+    font-weight: lighter;
+}
 
 #seperator{
     font-family: "Roboto Flex",sans-serif;
