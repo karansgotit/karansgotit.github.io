@@ -3,6 +3,14 @@
 body{
     background-color: #1e1e1e;
 }
+.css-icon{ 
+    color: #264de4; }
+.html-icon{ 
+    color: #e44d26; }
+.cpp-icon{ 
+    color: #00599C; }
+.py-icon{ 
+    color: #3572A5; }
 
 .icons-and-content{
     font-family: "Bebas Nue",sans-serif;
