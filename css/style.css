@@ -12,7 +12,13 @@ body{
 .py-icon{ 
     color: #3572A5; }
 
-    
+.content-work-section{
+    font-family: "Bebas Nue",sans-serif;
+    font-size:25px;
+    color:#F2F0EF;
+    margin-left:72px;
+    font-weight: lighter;
+}
 .icons-and-content{
     font-family: "Bebas Nue",sans-serif;
     font-size:25px;
