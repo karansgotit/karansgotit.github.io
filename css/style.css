@@ -12,6 +12,19 @@ body{
 .py-icon{ 
     color: #3572A5; }
 
+.first-project{
+    font-family: "Bebas Nue",sans-serif;
+    font-size:25px;
+    color:#F2F0EF;
+    margin-left:72px;
+    font-weight: lighter;
+    width:500px;
+    border: 3px solid #e76f51;
+    border-radius: 10px;
+    padding: 10px 30px;
+    
+}
+
 .content-work-section{
     font-family: "Bebas Nue",sans-serif;
     font-size:25px;
