@@ -7,6 +7,36 @@ body{
     position: relative;
 }
 
+.icons-and-links{
+    display: flex;
+    justify-content: start;
+    gap:25px;
+    margin-left:72px;
+    margin-bottom: 50px;;
+}
+.github-icon{
+    color:#FF7D29;
+    cursor:pointer;
+    font-size:45px;
+    margin-right:0px;
+
+}
+
+.instagram-icon{
+    color:#FF7D29;
+    cursor:pointer;
+    font-size:45px;
+    
+}
+.github-icon:hover{
+    transform: scale(1.25);
+    color:#e44d26;
+}
+
+.instagram-icon:hover{
+    transform: scale(1.25);
+    color:#e44d26;
+}
 .personal-photo {
     position: absolute;
     top: 150px;
