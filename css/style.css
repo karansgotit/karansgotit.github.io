@@ -73,9 +73,9 @@ body{
     position: absolute;
     top: 150px;
     right: 100px;
+    width:400px;
     height: 500px;
-    width: 500px;
-    border-radius: 50%;
+    border-radius: 40%;
     z-index: 0;
 }
 .css-icon{ 
