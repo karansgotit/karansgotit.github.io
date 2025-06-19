@@ -241,12 +241,14 @@ body{
 
 #resume-button{
     font-family: "Bebas Nue",sans-serif;
-    padding:12px 16px;
+    padding:14px 16px;
     margin:20px 0px 0px 72px;
     font-size:15px;
     background-color: #FF7D29;
     font-weight:900;
     line-height: 175%;
+    text-decoration: none;
+    color: #1e1e1e;
 }
 
 #resume-button:hover {
