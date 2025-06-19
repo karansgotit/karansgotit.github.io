@@ -4,6 +4,17 @@ body{
     margin:0px;
     padding:0px;
     background-color: #1e1e1e;
+    position: relative;
+}
+
+.personal-photo {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    z-index: 0;
 }
 .css-icon{ 
     color: #264de4; }
@@ -182,6 +193,7 @@ body{
 #navbar{
     position:sticky;
     top:0;
+    z-index:10;
 }
 
 .intro{
