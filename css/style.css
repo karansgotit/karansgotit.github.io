@@ -1,7 +1,7 @@
 
 
 body{
-    margin: 0px;
+    margin:0px;
     padding:0px;
     background-color: #1e1e1e;
 }
@@ -156,7 +156,7 @@ body{
 }
 
 #navbar a:hover{
-    color: #e76f51;
+    color: #E6521F;
     cursor:pointer;
 } 
 
@@ -168,13 +168,13 @@ body{
 
 }
 #initial-name{
-    color: #f4a261;
+    color: #FF7D29;
     margin-bottom: 0px;
     margin-top:150px;
     
 }
 #last-name{
-    color: #e76f51;
+    color: #E6521F;
     margin-top:0px;
     margin-bottom:0px
 }
@@ -200,14 +200,14 @@ body{
     padding:12px 16px;
     margin:20px 0px 0px 72px;
     font-size:15px;
-    background-color: #f4a261;
+    background-color: #FF7D29;
     font-weight:900;
     line-height: 175%;
 }
 
 #resume-button:hover {
     cursor: pointer;
-    background-color: #e76f51;
+    background-color: #E6521F;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
 }
