@@ -20,7 +20,7 @@ body{
 
 .second-project:hover{
     transform: scale(1.07);
-    color: #e76f51;
+    color: #FF7D29;
     cursor: pointer;
 }
 .second-project-image{
@@ -35,7 +35,7 @@ body{
     margin-left:72px;
     font-weight: lighter;
     width:500px;
-    border: 3px solid #e76f51;
+    border: 3px solid #FF7D29;
     border-radius: 10px;
     padding: 5px 10px;
 
@@ -53,7 +53,7 @@ body{
     margin-left:72px;
     font-weight: lighter;
     width:500px;
-    border: 3px solid #e76f51;
+    border: 3px solid #FF7D29;
     border-radius: 10px;
     padding: 5px 10px;
 
@@ -61,7 +61,7 @@ body{
 
 .first-project:hover {
     transform: scale(1.07);
-    color: #e76f51;
+    color: #FF7D29;
     cursor: pointer;
 }
 
@@ -148,7 +148,7 @@ body{
 
 
 #navbar a{
-    color: #f4a261;
+    color: #FF7D29;
     text-decoration: none;
     padding: 8px 19px;   
     font-size: 20px;
