@@ -7,7 +7,27 @@ body{
     position: relative;
 }
 
+.icons-and-links{
+    display: flex;
+    justify-content: start;
+    gap:25px;
+    margin-left:72px;
+}
+.github-icon{
+    color:#FF7D29;
+    cursor:pointer;
+    font-size:45px;
+    margin-right:0px;
 
+}
+
+
+.instagram-icon{
+    color:#FF7D29;
+    cursor:pointer;
+    font-size:45px;
+    
+}
 .personal-photo {
     position: absolute;
     top: 150px;
