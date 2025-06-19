@@ -4,7 +4,10 @@ body{
     margin:0px;
     padding:0px;
     background-color: #1e1e1e;
+    position: relative;
 }
+
+
 .css-icon{ 
     color: #264de4; }
 .html-icon{ 
