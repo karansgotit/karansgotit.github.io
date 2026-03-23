@@ -180,6 +180,21 @@
         }, { threshold: 0.15 });
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        const navLinks = document.querySelectorAll('#navbar a');
+        const sections = document.querySelectorAll('main [id]');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    const active = document.querySelector(`#navbar a[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+
+        sections.forEach(section => navObserver.observe(section));
     </script>
 </body>
 </html>
