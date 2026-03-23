@@ -317,6 +317,15 @@ body{
     margin-bottom: 0px;
     margin-top:100px;
 }
+
+#hero-role {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #aaaaaa;
+    margin: 8px 0 0 0;
+    letter-spacing: 0.04em;
+}
 #last-name{
     color: #E6521F;
     margin-top:0px;
@@ -419,6 +428,10 @@ body{
 
     #initial-name {
         margin-top: 60px;
+    }
+
+    #hero-role {
+        font-size: 15px;
     }
 
     .intro {
