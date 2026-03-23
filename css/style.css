@@ -108,55 +108,63 @@ body{
     cursor: default;
 }
 
-.projects{
-    display:flex;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin: 0 72px 60px 72px;
 }
 
-.second-project:hover{
-    transform: scale(1.07);
-    color: #FF7D29;
+.project-card {
+    font-family: "Roboto Flex", sans-serif;
+    color: #F2F0EF;
+    border: 2px solid #FF7D29;
+    border-radius: 10px;
+    padding: 16px 18px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    border-color: #E6521F;
     cursor: pointer;
 }
-.second-project-image{
-    width:100%;
-    padding:0px;
-    border-radius: 8px;
-}
-.second-project{
-    font-family: "Bebas Nue",sans-serif;
-    font-size:25px;
-    color:#F2F0EF;
-    margin-left:72px;
-    font-weight: lighter;
-    width:500px;
-    border: 3px solid #FF7D29;
-    border-radius: 10px;
-    padding: 5px 10px;
 
-}
-.project-image{
-    width:100%;
-    padding:0px;
-    border-radius: 8px;
-    
-}
-.first-project{
-    font-family: "Bebas Nue",sans-serif;
-    font-size:25px;
-    color:#F2F0EF;
-    margin-left:72px;
-    font-weight: lighter;
-    width:500px;
-    border: 3px solid #FF7D29;
-    border-radius: 10px;
-    padding: 5px 10px;
-
+.project-image {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: block;
 }
 
-.first-project:hover {
-    transform: scale(1.07);
+.project-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-family: "Bebas Nue", sans-serif;
+    font-size: 22px;
     color: #FF7D29;
-    cursor: pointer;
+    letter-spacing: 0.03em;
+}
+
+.project-tag {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 13px;
+    color: #aaaaaa;
+}
+
+.project-desc {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 170%;
+    margin: 0;
+    color: #d0d0d0;
 }
 
 .exp-section {
