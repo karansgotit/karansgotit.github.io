@@ -356,16 +356,6 @@ body{
     z-index:10;
 }
 
-.intro{
-    font-family: "Roboto Flex",sans-serif;
-    font-size:25px;
-    color:#F2F0EF;
-    margin:15px 0px 0px 72px;
-    display: Flex;
-    width: 600px;
-    line-height:200%;
-    font-weight: lighter;
-} 
 
 .hero-cta {
     display: flex;
