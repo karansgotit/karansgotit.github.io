@@ -38,36 +38,22 @@ body{
     margin-left:72px;
     margin-bottom: 60px;;
 }
-.github-icon{
-    color:#FF7D29;
-    cursor:pointer;
-    font-size:45px;
-    margin-right:0px;
-
+.social-icon {
+    color: #FF7D29;
+    cursor: pointer;
+    font-size: 45px;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
-
+.social-icon:hover {
+    transform: scale(1.25);
+    color: #E6521F;
+}
 
 .final-border{
     border-bottom: 2px solid #F1F1F1;
     margin-left: 72px;
     margin-right: 72px;
-}
-
-.instagram-icon{
-    color:#FF7D29;
-    cursor:pointer;
-    font-size:45px;
-    
-}
-.github-icon:hover{
-    transform: scale(1.25);
-    color:#e44d26;
-}
-
-.instagram-icon:hover{
-    transform: scale(1.25);
-    color:#e44d26;
 }
 .skills-container {
     margin: 0 72px 60px 72px;
