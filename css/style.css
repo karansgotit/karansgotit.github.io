@@ -167,6 +167,21 @@ body{
     margin-bottom: 5px;
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FF7D29;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    color: #E6521F;
+    text-decoration: underline;
+}
+
 .exp-section {
     margin: 0 72px 60px 72px;
     display: flex;
