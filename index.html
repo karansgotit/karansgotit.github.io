@@ -1,104 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="./images/fevicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Orbitron:wght@400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Karan Passi | Portfolio</title>
+    <link rel="icon" type="image/png" href="./images/fevicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav id = "navbar">
+    <nav id="navbar">
         <ul>
-            <li><a href ="#initial-name">Home</a></li>
-            <li><a href ="#resume-button">About</a></li>
-            <li><a href ="#projects-section">Projects</a></li>
-            <li><a href ="#placeholder-nav">Work and Volunteer  Experience </a></li>
-            <li><a href ="#contact-section">Socials</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#seperator">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#education-section">Education</a></li>
+            <li><a href="#work-volunteer-section">Experience</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact-section">Socials</a></li>
         </ul>
     </nav>
-        
-    </nav>
-    <div id = "home" >
-        <h1 id ="initial-name">Karan</h1>
-        <h1 id = "last-name">Passi</h1>
+    <main>
+    <div id="home" class="fade-in">
+        <h1 id="initial-name">Karan</h1>
+        <h1 id="last-name">Passi</h1>
+        <p id="hero-role">Computing Science Student</p>
     </div>
-        <div class = "intro">
-            <p>I'm a software developer who enjoys learning through solving real-world problems and building things that make a difference.</p>
+<div class="hero-cta fade-in">
+            <a href="./images/Karan_Passi_Resume.pdf" id="resume-button" target="_blank">Resume</a>
+            <a href="#contact-section" id="contact-button">Get In Touch</a>
         </div>
-    <img src = "./images/cool_photo.jpeg" class = "personal-photo">
-        <a href="./images/Karan_Passi_Resume.pdf" id="resume-button" target="_blank">Resume</a>
-        <div id ="seperator">
-            <p>About Me</p>
+        <div id="seperator" class="fade-in">
+            <h2>About Me</h2>
         </div>
-    <div class = "description" id ="about-me-nav">
-        <p>I'm a second-year computing science student at SFU who learns by writing code and building real things. I enjoy working through problems, trying out ideas, and making cool stuff.My goal is to become a competent full-stack developer by learning languages such as React,Next.js and more.I like to workout and play video games in my free time</p>
+    <div class="description fade-in" id="about-me-nav">
+        <p>I'm a computing science student at SFU who learns by writing code and building real things. I enjoy working through problems, trying out ideas, and making cool stuff. I like to workout and play video games in my free time.</p>
     </div>
-    <div class = "languages-section">
-        <p>My Tech Stack</p>
+    <div class="languages-section fade-in" id="skills-section">
+        <h2>My Tech Stack</h2>
     </div>
-    <div class = "content_languages">
-        <p>Languages</p>
-    </div>
-    <div class="icons-and-content" id ="placeholder-nav">
-        <p><i class="bi bi-filetype-css css-icon"></i> CSS</p>
-        <p><i class="bi bi-filetype-html html-icon"></i> HTML</p>
-        <p><i class="bi bi-code-slash cpp-icon"></i> C++</p>
-        <p><i class="bi bi-filetype-py py-icon"></i> Python</p>
-    </div>
-    <div class = "languages-section" id = "work-volunteer-section">
-        <p>Work and Volunteer Experience</p>
-    </div>
-    <div class="content-work-section" id = "education-and-other">
-        <p><i class="bi bi-book"></i>
-            Education - Simon Fraser University (Sept 2023 -Sept 2027)</p>
-        <p><i class="bi bi-people"></i>
-            Volunteer Experience -  Peer Educator at Fraser International College</p>
-        <p><i class="bi bi-journal-text"></i>
-            Taught foundational math to first-year students helping them improve their understanding and confidence in problem-solving.</p>
-      </div>
-    <div class = "languages-section" id = "projects-section">
-        <p>My Projects</p>
-    </div>
-    <div class = "projects">
-        <div class = "first-project">
-            <img src = "./images/WhatsApp Image 2025-06-18 at 16.46.46.jpeg" alt = "Image of the first page of my Organize me project" class = "project-image">
-            <p>Organize Me</p>
-            <p>Organize Me is a web application designed to help Simon Fraser University (SFU) students manage their coursework efficiently. Students securely log in using their SFU credentials. The app then utilizes Canvas's OAuth2 protocol to connect to the student's Canvas account, automatically retrieving upcoming assignments and presenting them in a user-friendly interface.</p>
+    <div class="skills-container fade-in">
+        <div class="skill-group">
+            <p class="skill-group-label">Languages</p>
+            <div class="skill-chips">
+                <span class="skill-chip"><i class="devicon-java-plain colored"></i> Java</span>
+                <span class="skill-chip"><i class="devicon-cplusplus-plain colored"></i> C++</span>
+                <span class="skill-chip"><i class="devicon-html5-plain colored"></i> HTML</span>
+                <span class="skill-chip"><i class="devicon-css3-plain colored"></i> CSS</span>
+            </div>
         </div>
-        <div class = "second-project">
-            <img src = "./images/portfolio_picture.png" alt = "Image of the home page of my personal portfolio" class = "second-project-image">
-            <p>Personal Portfolio</p>
-            <p>This is my personal portfolio website built from scratch using pure CSS and HTML. It demonstrates a small chunk of the work I have done, the skills I'm learning, and the experiences I have had along the way. It's minimalist and clutter-free with focus on smooth navigation.</p>
+        <div class="skill-group">
+            <p class="skill-group-label">Frameworks</p>
+            <div class="skill-chips">
+                <span class="skill-chip"><i class="devicon-spring-plain colored"></i> Spring Boot</span>
+            </div>
+        </div>
+        <div class="skill-group">
+            <p class="skill-group-label">Developer Tools</p>
+            <div class="skill-chips">
+                <span class="skill-chip"><i class="devicon-git-plain colored"></i> Git</span>
+                <span class="skill-chip"><i class="devicon-github-original colored"></i> GitHub</span>
+                <span class="skill-chip"><i class="devicon-github-original colored"></i> GitHub Pages</span>
+                <span class="skill-chip"><i class="devicon-intellij-plain colored"></i> IntelliJ IDEA</span>
+                <span class="skill-chip"><i class="devicon-vscode-plain colored"></i> VS Code</span>
+                <span class="skill-chip"><i class="devicon-gradle-plain colored"></i> Gradle</span>
+            </div>
         </div>
     </div>
-    <div class = "languages-section" id = "contact-section">
-        <p>My Socials</p>
+    <div class="languages-section fade-in" id="education-section">
+        <h2>Education</h2>
     </div>
-    <div class="icons-and-links">
-        <a href="https://github.com/karansgotit" target="_blank" class="github-icon">
+    <div class="exp-section">
+        <div class="exp-card fade-in">
+            <div class="exp-card-header">
+                <span class="exp-title">Bachelor of Science in Computing Science</span>
+                <span class="exp-date">Sep 2023 – Present</span>
+            </div>
+            <p class="exp-org">Simon Fraser University &mdash; Burnaby, BC</p>
+        </div>
+    </div>
+    <div class="languages-section fade-in" id="work-volunteer-section">
+        <h2>Work and Volunteer Experience</h2>
+    </div>
+    <div class="exp-section">
+        <div class="exp-card fade-in">
+            <div class="exp-card-header">
+                <span class="exp-title">Concession Stand Worker</span>
+                <span class="exp-date">May 2024 – Present</span>
+            </div>
+            <p class="exp-org">BC Place &mdash; Vancouver, BC</p>
+            <ul class="exp-bullets">
+                <li>Delivered fast and accurate food and beverage service to ~100 customers per event by managing orders efficiently during peak game and concert periods, ensuring minimal wait times.</li>
+                <li>Coordinated with the concession team during sold-out BC Lions and Vancouver Whitecaps games by managing restocking and order fulfillment across multiple stations, reducing service delays during peak hours.</li>
+            </ul>
+        </div>
+        <div class="exp-card fade-in">
+            <div class="exp-card-header">
+                <span class="exp-title">Retail Sales Associate</span>
+                <span class="exp-date">Aug 2024 – June 2025</span>
+            </div>
+            <p class="exp-org">UBC &mdash; Vancouver, BC</p>
+            <ul class="exp-bullets">
+                <li>Maintained high accuracy across ~100 transactions per shift by double-checking each input before processing, consistently minimizing errors in a fast-paced environment.</li>
+                <li>Communicated technical product details to customers by adapting explanations to individual knowledge levels, reducing purchase confusion and improving customer satisfaction.</li>
+            </ul>
+        </div>
+        <div class="exp-card fade-in">
+            <div class="exp-card-header">
+                <span class="exp-title">Peer Educator</span>
+                <span class="exp-date">May 2024 – Dec 2024</span>
+            </div>
+            <p class="exp-org">Fraser International College &mdash; Burnaby, BC</p>
+            <ul class="exp-bullets">
+                <li>Guided up to 5 students per week through Calculus I by diagnosing foundational errors in their problem-solving methods, leading to improved conceptual understanding and accuracy.</li>
+                <li>Collaborated with a team of 5+ peer educators to document and resolve recurring student misconceptions, improving consistency of assistance across the group.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="languages-section fade-in" id="projects-section">
+        <h2>My Projects</h2>
+    </div>
+    <div class="projects">
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <span class="project-title">Sum-Awesome Game</span>
+                <span class="project-tag">Java &bull; Fall 2025</span>
+            </div>
+            <p class="project-desc">A turn-based RPG combat game with a math-based attack system, built around three design patterns.</p>
+            <ul class="project-bullets">
+                <li>Implemented Observer, Null Object, and Open-Closed patterns for an extensible architecture</li>
+                <li>Designed 13 classes across 6 weapon types and 6 ring types using interfaces and polymorphism</li>
+                <li>Decoupled event tracking from core logic so a stats class records damage and activations independently</li>
+            </ul>
+            <a href="https://github.com/karansgotit/sum-awesome-game" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <span class="project-title">Blanket Fort Water Fight</span>
+                <span class="project-tag">Java &bull; Fall 2025</span>
+            </div>
+            <p class="project-desc">A turn-based terminal strategy game on a 10&times;10 fog-of-war grid with strict layered architecture.</p>
+            <ul class="project-bullets">
+                <li>Enforced MVC separation across 3 packages so each layer could be developed and tested independently</li>
+                <li>Built a random polyomino fort generator using a random-walk algorithm with collision detection</li>
+                <li>Computed opponent scoring each turn with Java Streams, eliminating manual iteration</li>
+            </ul>
+            <a href="https://github.com/karansgotit/WaterFightGameJava" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+        <div class="project-card fade-in">
+            <div class="project-card-header">
+                <span class="project-title">Personal Portfolio</span>
+                <span class="project-tag">HTML &bull; CSS &bull; Git &bull; May 2025</span>
+            </div>
+            <p class="project-desc">Designed and deployed a personal portfolio website from scratch by integrating third-party libraries and establishing a Git version control workflow via GitHub Pages, enabling a fast-loading, maintainable site with continuous deployment.</p>
+            <a href="https://github.com/karansgotit/karansgotit.github.io" target="_blank" class="project-link">View on GitHub &rarr;</a>
+        </div>
+    </div>
+    <div class="languages-section fade-in" id="contact-section">
+        <h2>My Socials</h2>
+    </div>
+    <div class="icons-and-links fade-in">
+        <a href="https://github.com/karansgotit" target="_blank" class="social-icon github-icon" aria-label="GitHub">
           <i class="bi bi-github"></i>
         </a>
-        <a href="https://instagram.com/_karan6605" target="_blank" class="instagram-icon">
-          <i class="bi bi-instagram"></i>
+        <a href="https://linkedin.com/in/karanpassi" target="_blank" class="social-icon linkedin-icon" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:kpa77@sfu.ca" class="social-icon email-icon" aria-label="Email">
+          <i class="bi bi-envelope"></i>
         </a>
       </div>
-      <div class = "footer">
+    </main>
+      <div class="footer">
       <div class = "final-border"></div>
       <div class = "last-content">
         <img src = "images/transparent_fevicon.png" alt = "my personal website logo" class = "logo-bottom">
-        <p class = "footer-text">© 2025 Karan Passi. All Rights Reserved</p>
+        <p class="footer-text">© 2026 Karan Passi. All Rights Reserved</p>
       </div>
     </div>
 
-    
-    
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        const navLinks = document.querySelectorAll('#navbar a');
+        const sections = document.querySelectorAll('main [id]');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    const active = document.querySelector(`#navbar a[href="#${entry.target.id}"]`);
+                    if (active) active.classList.add('active');
+                }
+            });
+        }, { rootMargin: '-40% 0px -55% 0px' });
+
+        sections.forEach(section => navObserver.observe(section));
+    </script>
 </body>
 </html>
