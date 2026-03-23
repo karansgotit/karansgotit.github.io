@@ -317,11 +317,6 @@ body{
     cursor:pointer;
 }
 
-#navbar a.active {
-    color: #FF7D29;
-    border-bottom: 2px solid #FF7D29;
-    padding-bottom: 6px;
-} 
 
 #home{
     font-family: "Bebas Nue",sans-serif;

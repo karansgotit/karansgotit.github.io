@@ -195,24 +195,6 @@
 
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-        const navLinks = document.querySelectorAll('#navbar a');
-        const sections = [...navLinks]
-            .map(link => document.getElementById(link.getAttribute('href').slice(1)))
-            .filter(Boolean);
-
-        function updateActiveNav() {
-            const mid = window.scrollY + window.innerHeight / 2;
-            let current = sections[0].id;
-            sections.forEach(section => {
-                if (section.offsetTop <= mid) current = section.id;
-            });
-            navLinks.forEach(link => {
-                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
-            });
-        }
-
-        window.addEventListener('scroll', updateActiveNav, { passive: true });
-        updateActiveNav();
     </script>
 </body>
 </html>
