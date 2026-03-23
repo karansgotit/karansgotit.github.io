@@ -69,14 +69,44 @@ body{
     transform: scale(1.25);
     color:#e44d26;
 }
-.css-icon{ 
-    color: #264de4; }
-.html-icon{ 
-    color: #e44d26; }
-.cpp-icon{ 
-    color: #00599C; }
-.py-icon{ 
-    color: #3572A5; }
+.skills-container {
+    margin: 0 72px 60px 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.skill-group-label {
+    font-family: "Bebas Nue", sans-serif;
+    font-size: 20px;
+    color: #F2F0EF;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.skill-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-chip {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #FF7D29;
+    border: 1.5px solid #FF7D29;
+    border-radius: 20px;
+    padding: 6px 14px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.skill-chip:hover {
+    background-color: #FF7D29;
+    color: #1e1e1e;
+    cursor: default;
+}
 
 .projects{
     display:flex;
@@ -135,33 +165,6 @@ body{
     color:#F2F0EF;
     margin-left:72px;
     font-weight: lighter;
-}
-.icons-and-content{
-    font-family: "Bebas Nue",sans-serif;
-    font-size:25px;
-    color:#F2F0EF;
-    margin-left: 72px;
-    margin-bottom:40px;
-    margin-top:0px;
-    display: flex;
-    justify-content: start;
-    gap: 80px;
-    line-height: 200%;
-    font-size: 36px ;
-}
-
-.content_languages{
-    font-family: "Bebas Nue",sans-serif;
-    font-size:25px;
-    color:#F2F0EF;
-    margin-left: 72px;
-    margin-bottom:20px;
-    margin-top:50px;
-    width: 850px;
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 200%;
-    font-size: 36px ;
 }
 .languages-section{
     font-family: "Roboto Flex",sans-serif;
