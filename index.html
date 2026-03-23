@@ -23,27 +23,27 @@
         </ul>
     </nav>
     <main>
-    <div id = "home" >
-        <h1 id ="initial-name">Karan</h1>
-        <h1 id = "last-name">Passi</h1>
+    <div id="home" class="fade-in">
+        <h1 id="initial-name">Karan</h1>
+        <h1 id="last-name">Passi</h1>
     </div>
-        <div class = "intro">
+        <div class="intro fade-in">
             <p>I'm a software developer who enjoys learning through solving real-world problems and building things that make a difference.</p>
         </div>
-        <div class="hero-cta">
+        <div class="hero-cta fade-in">
             <a href="./images/Karan_Passi_Resume.pdf" id="resume-button" target="_blank">Resume</a>
             <a href="#contact-section" id="contact-button">Get In Touch</a>
         </div>
-        <div id="seperator">
+        <div id="seperator" class="fade-in">
             <h2>About Me</h2>
         </div>
-    <div class = "description" id ="about-me-nav">
+    <div class="description fade-in" id="about-me-nav">
         <p>I'm a computing science student at SFU who learns by writing code and building real things. I enjoy working through problems, trying out ideas, and making cool stuff. My goal is to become a competent full-stack developer by learning languages such as React, Next.js and more. I like to workout and play video games in my free time.</p>
     </div>
-    <div class="languages-section" id="skills-section">
+    <div class="languages-section fade-in" id="skills-section">
         <h2>My Tech Stack</h2>
     </div>
-    <div class="skills-container">
+    <div class="skills-container fade-in">
         <div class="skill-group">
             <p class="skill-group-label">Languages</p>
             <div class="skill-chips">
@@ -72,11 +72,11 @@
             </div>
         </div>
     </div>
-    <div class="languages-section" id="work-volunteer-section">
+    <div class="languages-section fade-in" id="work-volunteer-section">
         <h2>Work and Volunteer Experience</h2>
     </div>
     <div class="exp-section">
-        <div class="exp-card">
+        <div class="exp-card fade-in">
             <div class="exp-card-header">
                 <span class="exp-title">Concession Stand Worker</span>
                 <span class="exp-date">May 2024 – Present</span>
@@ -87,7 +87,7 @@
                 <li>Coordinated with the concession team during sold-out BC Lions and Vancouver Whitecaps games by managing restocking and order fulfillment across multiple stations, reducing service delays during peak hours.</li>
             </ul>
         </div>
-        <div class="exp-card">
+        <div class="exp-card fade-in">
             <div class="exp-card-header">
                 <span class="exp-title">Retail Sales Associate</span>
                 <span class="exp-date">Aug 2024 – June 2025</span>
@@ -98,7 +98,7 @@
                 <li>Communicated technical product details to customers by adapting explanations to individual knowledge levels, reducing purchase confusion and improving customer satisfaction.</li>
             </ul>
         </div>
-        <div class="exp-card">
+        <div class="exp-card fade-in">
             <div class="exp-card-header">
                 <span class="exp-title">Peer Educator</span>
                 <span class="exp-date">May 2024 – Dec 2024</span>
@@ -110,25 +110,25 @@
             </ul>
         </div>
     </div>
-    <div class="languages-section" id="projects-section">
+    <div class="languages-section fade-in" id="projects-section">
         <h2>My Projects</h2>
     </div>
     <div class="projects">
-        <div class="project-card">
+        <div class="project-card fade-in">
             <div class="project-card-header">
                 <span class="project-title">Sum-Awesome Game</span>
                 <span class="project-tag">Java &bull; Fall 2025</span>
             </div>
             <p class="project-desc">Built a turn-based RPG combat game featuring a math-based attack system by implementing the Observer, Null Object, and Open-Closed design patterns, producing an architecture where new features could be added without modifying existing code. Designed a modular system of 13 classes across 6 weapon types and 6 ring types using interfaces and polymorphism.</p>
         </div>
-        <div class="project-card">
+        <div class="project-card fade-in">
             <div class="project-card-header">
                 <span class="project-title">Blanket Fort Water Fight</span>
                 <span class="project-tag">Java &bull; Fall 2025</span>
             </div>
             <p class="project-desc">Developed a turn-based terminal strategy game on a 10&times;10 fog-of-war grid by enforcing strict MVC separation across 3 packages. Engineered a random polyomino fort generator using a random-walk algorithm with collision detection and bounds checking. Computed opponent scoring each turn using Java Streams.</p>
         </div>
-        <div class="project-card">
+        <div class="project-card fade-in">
             <img src="./images/portfolio_picture.png" alt="Screenshot of Karan's personal portfolio website" class="project-image">
             <div class="project-card-header">
                 <span class="project-title">Personal Portfolio</span>
@@ -137,10 +137,10 @@
             <p class="project-desc">Designed and deployed a personal portfolio website from scratch by integrating third-party libraries and establishing a Git version control workflow via GitHub Pages, enabling a fast-loading, maintainable site with continuous deployment.</p>
         </div>
     </div>
-    <div class="languages-section" id="contact-section">
+    <div class="languages-section fade-in" id="contact-section">
         <h2>My Socials</h2>
     </div>
-    <div class="icons-and-links">
+    <div class="icons-and-links fade-in">
         <a href="https://github.com/karansgotit" target="_blank" class="social-icon github-icon" aria-label="GitHub">
           <i class="bi bi-github"></i>
         </a>
@@ -163,7 +163,17 @@
       </div>
     </div>
 
-    
-    
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
 </body>
 </html>
