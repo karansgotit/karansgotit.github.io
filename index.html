@@ -201,18 +201,11 @@
             .filter(Boolean);
 
         function updateActiveNav() {
-            const navHeight = document.getElementById('navbar').offsetHeight + 8;
-            const atBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 8;
+            const mid = window.scrollY + window.innerHeight / 2;
             let current = sections[0].id;
-            if (atBottom) {
-                current = sections[sections.length - 1].id;
-            } else {
-                sections.forEach(section => {
-                    if (window.scrollY >= section.offsetTop - navHeight) {
-                        current = section.id;
-                    }
-                });
-            }
+            sections.forEach(section => {
+                if (section.offsetTop <= mid) current = section.id;
+            });
             navLinks.forEach(link => {
                 link.classList.toggle('active', link.getAttribute('href') === '#' + current);
             });
