@@ -200,17 +200,21 @@
             .map(link => document.getElementById(link.getAttribute('href').slice(1)))
             .filter(Boolean);
 
-        const navObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    navLinks.forEach(link => link.classList.remove('active'));
-                    const active = document.querySelector(`#navbar a[href="#${entry.target.id}"]`);
-                    if (active) active.classList.add('active');
+        function updateActiveNav() {
+            const navHeight = document.getElementById('navbar').offsetHeight + 8;
+            let current = sections[0].id;
+            sections.forEach(section => {
+                if (window.scrollY >= section.offsetTop - navHeight) {
+                    current = section.id;
                 }
             });
-        }, { rootMargin: '-40% 0px -55% 0px' });
+            navLinks.forEach(link => {
+                link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+            });
+        }
 
-        sections.forEach(section => navObserver.observe(section));
+        window.addEventListener('scroll', updateActiveNav, { passive: true });
+        updateActiveNav();
     </script>
 </body>
 </html>
