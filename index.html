@@ -196,7 +196,9 @@
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
         const navLinks = document.querySelectorAll('#navbar a');
-        const sections = document.querySelectorAll('main [id]');
+        const sections = [...navLinks]
+            .map(link => document.getElementById(link.getAttribute('href').slice(1)))
+            .filter(Boolean);
 
         const navObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
