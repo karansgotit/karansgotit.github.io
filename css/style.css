@@ -184,6 +184,13 @@ body{
     border-bottom: 2px solid #495057;
 }
 
+.languages-section h2{
+    font-family: "Roboto Flex",sans-serif;
+    font-size:25px;
+    font-weight: lighter;
+    margin: 0 0 8px 0;
+}
+
 #seperator{
     font-family: "Roboto Flex",sans-serif;
     font-size:25px;
@@ -194,7 +201,13 @@ body{
     width: 850px;
     font-weight: lighter;
     border-bottom: 2px solid #495057;
+}
 
+#seperator h2{
+    font-family: "Roboto Flex",sans-serif;
+    font-size:25px;
+    font-weight: lighter;
+    margin: 0 0 8px 0;
 }
 
 .description{

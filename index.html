@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="./images/fevicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Happy+Monkey&family=Orbitron:wght@400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Karan Passi | Portfolio</title>
+    <link rel="icon" type="image/png" href="./images/fevicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav id = "navbar">
+    <nav id="navbar">
         <ul>
-            <li><a href ="#initial-name">Home</a></li>
-            <li><a href ="#resume-button">About</a></li>
-            <li><a href ="#projects-section">Projects</a></li>
-            <li><a href ="#placeholder-nav">Work and Volunteer  Experience </a></li>
-            <li><a href ="#contact-section">Socials</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#seperator">About</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#work-volunteer-section">Experience</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#contact-section">Socials</a></li>
         </ul>
     </nav>
-        
-    </nav>
+    <main>
     <div id = "home" >
         <h1 id ="initial-name">Karan</h1>
         <h1 id = "last-name">Passi</h1>
@@ -33,16 +30,16 @@
         <div class = "intro">
             <p>I'm a software developer who enjoys learning through solving real-world problems and building things that make a difference.</p>
         </div>
-    <img src = "./images/cool_photo.jpeg" class = "personal-photo">
+    <img src="./images/cool_photo.jpeg" alt="Photo of Karan Passi" class="personal-photo">
         <a href="./images/Karan_Passi_Resume.pdf" id="resume-button" target="_blank">Resume</a>
-        <div id ="seperator">
-            <p>About Me</p>
+        <div id="seperator">
+            <h2>About Me</h2>
         </div>
     <div class = "description" id ="about-me-nav">
-        <p>I'm a second-year computing science student at SFU who learns by writing code and building real things. I enjoy working through problems, trying out ideas, and making cool stuff.My goal is to become a competent full-stack developer by learning languages such as React,Next.js and more.I like to workout and play video games in my free time</p>
+        <p>I'm a computing science student at SFU who learns by writing code and building real things. I enjoy working through problems, trying out ideas, and making cool stuff. My goal is to become a competent full-stack developer by learning languages such as React, Next.js and more. I like to workout and play video games in my free time.</p>
     </div>
-    <div class = "languages-section">
-        <p>My Tech Stack</p>
+    <div class="languages-section" id="skills-section">
+        <h2>My Tech Stack</h2>
     </div>
     <div class = "content_languages">
         <p>Languages</p>
@@ -53,8 +50,8 @@
         <p><i class="bi bi-code-slash cpp-icon"></i> C++</p>
         <p><i class="bi bi-filetype-py py-icon"></i> Python</p>
     </div>
-    <div class = "languages-section" id = "work-volunteer-section">
-        <p>Work and Volunteer Experience</p>
+    <div class="languages-section" id="work-volunteer-section">
+        <h2>Work and Volunteer Experience</h2>
     </div>
     <div class="content-work-section" id = "education-and-other">
         <p><i class="bi bi-book"></i>
@@ -64,8 +61,8 @@
         <p><i class="bi bi-journal-text"></i>
             Taught foundational math to first-year students helping them improve their understanding and confidence in problem-solving.</p>
       </div>
-    <div class = "languages-section" id = "projects-section">
-        <p>My Projects</p>
+    <div class="languages-section" id="projects-section">
+        <h2>My Projects</h2>
     </div>
     <div class = "projects">
         <div class = "first-project">
@@ -79,8 +76,8 @@
             <p>This is my personal portfolio website built from scratch using pure CSS and HTML. It demonstrates a small chunk of the work I have done, the skills I'm learning, and the experiences I have had along the way. It's minimalist and clutter-free with focus on smooth navigation.</p>
         </div>
     </div>
-    <div class = "languages-section" id = "contact-section">
-        <p>My Socials</p>
+    <div class="languages-section" id="contact-section">
+        <h2>My Socials</h2>
     </div>
     <div class="icons-and-links">
         <a href="https://github.com/karansgotit" target="_blank" class="github-icon">
@@ -90,7 +87,8 @@
           <i class="bi bi-instagram"></i>
         </a>
       </div>
-      <div class = "footer">
+    </main>
+      <div class="footer">
       <div class = "final-border"></div>
       <div class = "last-content">
         <img src = "images/transparent_fevicon.png" alt = "my personal website logo" class = "logo-bottom">
