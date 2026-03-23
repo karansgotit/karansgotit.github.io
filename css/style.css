@@ -336,6 +336,7 @@ body{
     line-height: 175%;
     text-decoration: none;
     color: #1e1e1e;
+    border: 2px solid transparent;
 }
 
 #resume-button:hover {
